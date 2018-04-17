@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/ravitezu/al-go-rithms/linkedlist"
+	"github.com/ravitezu/al-go-rithms/linkedlist/singly_linked_list"
 )
 
 func main() {
-	sl := linkedlist.NewList()
+	sl := singly_linked_list.NewList()
 	for i := range "123456789"  {
 		sl.Append(i)
 	}
@@ -20,11 +20,11 @@ func main() {
 	sl.Display()
 	sl.Prepend(-2)
 	sl.Display()
-	n1 := linkedlist.NewNode("c")
+	n1 := singly_linked_list.NewNode("c")
 	sl.Tail.Next = n1
 	sl.Tail = n1
 	sl.Display()
-	n2 := linkedlist.NewNode("e")
+	n2 := singly_linked_list.NewNode("e")
 	sl.Tail.Next = n2
 	sl.Tail = n2
 	sl.Display()

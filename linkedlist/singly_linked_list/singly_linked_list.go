@@ -2,7 +2,7 @@
 
 // ToDo: Add Unit Tests.
 
-package linkedlist
+package singly_linked_list
 
 import (
 	"fmt"
